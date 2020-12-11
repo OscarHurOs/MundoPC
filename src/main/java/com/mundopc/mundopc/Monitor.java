@@ -15,19 +15,17 @@ public class Monitor {
     private static Integer contadorMonitores;
 
     private Monitor() {
-        this.contadorMonitores += this.contadorMonitores;
+        this.idMonitor = ++contadorMonitores;
     }
 
-    public Monitor(String Marca, Double tamano) {
-        super();
+    public Monitor(String marca, Double tamano) {
+        this(); //con this llamo al constructor vacío de esta misma clase
+        this.marca = marca;
+        this.tamano = tamano;
     }
 
     public Integer getIdMonitor() {
         return idMonitor;
-    }
-
-    public void setIdMonitor(Integer idMonitor) {
-        this.idMonitor = idMonitor;
     }
 
     public String getMarca() {
@@ -48,11 +46,11 @@ public class Monitor {
 
     public static Integer getContadorMonitores() {
         return contadorMonitores;
-    } 
+    }
 
     @Override
     public String toString() {
         return "Monitor{" + "idMonitor=" + idMonitor + ", marca=" + marca + ", tamano=" + tamano + '}';
     }
-    
+
 }
