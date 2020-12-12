@@ -33,7 +33,7 @@ public class DispositivoEntrada {
 
     @Override
     public String toString() {
-        return "DispositivoEntrada{" + "tipoEntrada=" + tipoEntrada + ", marca=" + marca + '}';
+        return "\n DispositivoEntrada{" + "tipoEntrada=" + tipoEntrada + ", marca=" + marca + '}';
     }
 
 }
