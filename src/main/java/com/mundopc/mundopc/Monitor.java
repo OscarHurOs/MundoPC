@@ -6,25 +6,25 @@ package com.mundopc.mundopc;
  */
 public class Monitor {
 
-    private Integer idMonitor;
+    private int idMonitor;
+
+    private static int contadorMonitores;
 
     private String marca;
 
-    private Double tamano;
-
-    private static Integer contadorMonitores;
+    private double tamanio;
 
     private Monitor() {
         this.idMonitor = ++contadorMonitores;
     }
 
-    public Monitor(String marca, Double tamano) {
+    public Monitor(String marca, double tamanio) {
         this(); //con this llamo al constructor vacío de esta misma clase
         this.marca = marca;
-        this.tamano = tamano;
+        this.tamanio = tamanio;
     }
 
-    public Integer getIdMonitor() {
+    public int getIdMonitor() {
         return idMonitor;
     }
 
@@ -36,21 +36,21 @@ public class Monitor {
         this.marca = marca;
     }
 
-    public Double getTamano() {
-        return tamano;
+    public double getTamanio() {
+        return tamanio;
     }
 
-    public void setTamano(Double tamano) {
-        this.tamano = tamano;
+    public void setTamanio(double tamanio) {
+        this.tamanio = tamanio;
     }
 
-    public static Integer getContadorMonitores() {
+    public static int getContadorMonitores() {
         return contadorMonitores;
     }
 
     @Override
     public String toString() {
-        return "Monitor{" + "idMonitor=" + idMonitor + ", marca=" + marca + ", tamano=" + tamano + '}';
+        return " Monitor{ " + "idMonitor=" + idMonitor + ", marca=" + marca + ", tamano=" + tamanio + '}';
     }
 
 }

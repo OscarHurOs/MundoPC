@@ -7,7 +7,7 @@ package com.mundopc.mundopc;
  */
 public class Computadora {
 
-    private Integer idComputadora;
+    private int idComputadora;
 
     private String nombre;
 
@@ -17,16 +17,23 @@ public class Computadora {
 
     private Raton raton;
 
+    private static int contadorComputadoras;
+
     private Computadora() {
-
+        this.idComputadora = ++Computadora.contadorComputadoras;
     }
 
-    private Computadora(String nombre, Monitor monitor,
+    public Computadora(String nombre, Monitor monitor,
             Teclado teclado, Raton raton) {
+        this();//con this llamo al constructor vacío de esta misma clase
+        this.nombre = nombre;
+        this.monitor = monitor;
+        this.teclado = teclado;
+        this.raton = raton;
 
     }
 
-    public Integer getIdComputadora() {
+    public int getIdComputadora() {
         return idComputadora;
     }
 
@@ -64,7 +71,7 @@ public class Computadora {
 
     @Override
     public String toString() {
-        return "Computadora{" + "idComputadora=" + idComputadora + ", nombre=" + nombre + ", monitor=" + monitor + ", teclado=" + teclado + ", raton=" + raton + '}';
+        return " Computadora{ " + "idComputadora=" + idComputadora + ", nombre=" + nombre + ", monitor=" + monitor + ", teclado=" + teclado + ", raton=" + raton + '}';
     }
 
 }
