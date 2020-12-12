@@ -6,26 +6,26 @@ package com.mundopc.mundopc;
  */
 public class Teclado extends DispositivoEntrada {
 
-    private Integer idTeclado;
+    private int idTeclado;
 
-    private static Integer contadorTeclados;
+    private static int contadorTeclados;
 
     public Teclado(String tipoEntrada, String marca) {
         super(tipoEntrada, marca); //lo primero es apuntar al constructor de la clase padre
         this.idTeclado = ++contadorTeclados;
     }
 
-    public Integer getIdTeclado() {
+    public int getIdTeclado() {
         return idTeclado;
     }
 
-    public static Integer getContadorTeclados() {
+    public static int getContadorTeclados() {
         return contadorTeclados;
     }
 
     @Override
     public String toString() {
-        return super.toString() + "Teclado{" + "idTeclado=" + idTeclado + '}';
+        return super.toString() + "idTeclado=" + idTeclado + '}';
     }
 
 }
