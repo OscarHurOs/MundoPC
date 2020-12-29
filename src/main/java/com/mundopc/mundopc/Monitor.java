@@ -6,7 +6,7 @@ package com.mundopc.mundopc;
  */
 public class Monitor {
 
-    private int idMonitor;
+    private final int idMonitor;
 
     private static int contadorMonitores;
 

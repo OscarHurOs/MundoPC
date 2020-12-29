@@ -7,7 +7,7 @@ package com.mundopc.mundopc;
  */
 public class Pedido {
 
-    private int idPedido;
+    private final int idPedido;
 
     private static int contadorPedidos;
 

@@ -10,8 +10,8 @@ public class MundoPc {
 
     public static void main(String[] args) {
 
-        Raton raton1 = new Raton("no se", "microsoft");
-        Teclado teclado1 = new Teclado("tampoco se", "genius");
+        Raton raton1 = new Raton("cableado", "microsoft");
+        Teclado teclado1 = new Teclado("cableado", "genius");
         Monitor monitor1 = new Monitor("Samnsung", 45.5);
         Computadora computadora1 = new Computadora("Gozila", monitor1, teclado1, raton1);
 

@@ -2,11 +2,11 @@ package com.mundopc.mundopc;
 
 /**
  *
- * @author oahur
+ * @author Oscar Hurtado
  */
 public class Teclado extends DispositivoEntrada {
 
-    private int idTeclado;
+    private final int idTeclado;
 
     private static int contadorTeclados;
 
