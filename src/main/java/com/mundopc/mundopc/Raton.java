@@ -6,7 +6,7 @@ package com.mundopc.mundopc;
  */
 public class Raton extends DispositivoEntrada {
 
-    private int idRaton;
+    private final int idRaton;
 
     private static int contadorRatones;
 

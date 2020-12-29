@@ -7,7 +7,7 @@ package com.mundopc.mundopc;
  */
 public class Computadora {
 
-    private int idComputadora;
+    private final int idComputadora;
 
     private String nombre;
 
